@@ -10,6 +10,9 @@ body {
   background-color: #291F1E;
   width: 100%;
   height: 100px;
+
+  animation-name: animationHome;
+  animation-duration: 2s;
 }
 
 .menu {
@@ -46,12 +49,18 @@ body {
 #perfilImage {
   border-radius: 100%;
   margin-right: 20px;
+
+  animation-name: imageAnitaion;
+  animation-duration: 2s;
 }
 
 .mainHome div {
   margin-top: 70px;
   vertical-align: top;
   display: inline-block;
+
+  animation-name: homeTitleAnimation;
+  animation-duration: 2s;
 }
 
 .title1 h1 {
@@ -70,6 +79,9 @@ body {
 .panel {
   margin-left: 10%;
   margin-right: 10%;
+
+  animation-name: animationHome;
+  animation-duration: 2s;
 }
 
 .dados {
@@ -121,6 +133,9 @@ body {
   display: inline-block;
   background-size: contain;
   float: left;
+
+  animation-name: animationHome;
+  animation-duration: 2s;
 }
 
 .panelProjetoInner {
@@ -138,7 +153,6 @@ body {
 
 .panelProjetoText {
   text-align: center;
-
 }
 
 .panelProjetoText h1 {
@@ -152,4 +166,39 @@ body {
 .panelProjetoText h3 {
   font-size: 15px;
   font-weight: 100;
+}
+
+/*
+  Animations
+*/
+
+@keyframes animationHome {
+  0% {
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes imageAnitaion {
+  0% {
+    transform: translate(-100px, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0px,0px);
+    opacity: 1;
+  }
+}
+
+@keyframes homeTitleAnimation {
+  0% {
+    transform: translate(100px, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0px,0px);
+    opacity: 1;
+  }
 }
