@@ -9,28 +9,30 @@ body {
 .nav {
   background-color: #291F1E;
   width: 100%;
-  height: 50px;
+  height: 100px;
 }
 
 .menu {
   margin: auto;
   list-style: none;
   text-align: right;
+  margin-right: 10%;
 }
 
 .menu li {
   display: inline-block;
   padding-left: 15px;
   padding-right: 15px;
-  line-height: 50px;
+  line-height: 100px;
 }
 
-a {
+.menu li a {
+  font-size: 27.5px;
   text-decoration: none;
   color: #aaa;
 }
 
-a:hover {
+.menu li a:hover {
   transition: 0.35s;
   color: #fff;
 }
@@ -65,7 +67,7 @@ a:hover {
   color: #FF8A65;
 }
 
-.curriculoBody {
+.panel {
   margin-left: 10%;
   margin-right: 10%;
 }
@@ -75,17 +77,79 @@ a:hover {
   display: inline-block;
 }
 
-.curriculoTitle {
+.panel a {
+  text-decoration: none;
+  color: #aaa;
+}
+
+.panel a:hover {
+  transition: 1s;
+  color: #fff;
+}
+
+.panel h2 {
   color: #FF7043;
   font-weight: 100;
 }
 
-.curriculoBody h3 {
+.panel h3 {
   color: #FF7043;
   font-weight: 120;
 }
 
-.curriculoBody h4 {
+.panel h4 {
   color: #aaa;
+  font-weight: 100;
+}
+
+.titlePage {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 100;
+}
+
+/*
+ Projetos
+*/
+
+.panelProjeto {
+  width: 300px;
+  height: 300px;
+  margin-right: 15px;
+  margin-top: 7.5px;
+  margin-bottom: 7.5px;
+  display: inline-block;
+  background-size: contain;
+  float: left;
+}
+
+.panelProjetoInner {
+  width: 100%;
+  height: 100%;
+  transition: .5s;
+  background-color: #291F1E;
+  opacity: 0;
+}
+
+.panelProjetoInner:hover {
+  transition: .5s;
+  opacity: .75;
+}
+
+.panelProjetoText {
+  text-align: center;
+
+}
+
+.panelProjetoText h1 {
+  margin-top: 0;
+  font-size: 25px;
+  padding-top: 100px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.panelProjetoText h3 {
+  font-size: 15px;
   font-weight: 100;
 }
