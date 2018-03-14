@@ -86,7 +86,19 @@ body {
 
 .dados {
   vertical-align: top;
+}
+
+.dados ul {
+  padding: 0;
+}
+
+.dados ul li {
   display: inline-block;
+  margin-right: 20px;
+}
+
+.formatoLinhas {
+  line-height: 30px;
 }
 
 .panel a {
